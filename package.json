@@ -1,7 +1,7 @@
 {
     "name": "ghm-jp-trim",
     "description": "google homeでの音声認識において日本語を整形してmastodonに投稿するやつ",
-    "version": "0.1",
+    "version": "0.1.1",
     "private": true,
     "license": "MIT",
     "author": "YaQ",
