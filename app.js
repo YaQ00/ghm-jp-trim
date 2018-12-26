@@ -5,7 +5,7 @@ var bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.post('/', (req, res) => {
     const text = req.body.status.replace(/\s+/g, '')
-    request.post("https://imastodon.net/api/v1/statuses", { form: { status: encodeURIComponent(text), visibility: 'public', access_token: req.body.access_token } })
+    request.post("https://imastodon.net/api/v1/statuses", { form: { status: text, visibility: 'public', access_token: req.body.access_token } })
     console.log(text)
     res
         .status(200)
